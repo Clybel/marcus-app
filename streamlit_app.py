@@ -1,7 +1,6 @@
 import streamlit as st
-
-from pages import page_1
-from pages import page_2
+from pages.page_1 import func_page_1
+from pages.page_2 import func_page_2
 
 def main():
     st.sidebar.subheader('Page selection')
@@ -19,8 +18,8 @@ def main():
 def main_page():
     st.title('Main Page')
 def run_page_1():
-    page_1.func_page_1()
+    func_page_1()
 def run_page_2():
-    page_2.func_page_2()
+    func_page_2()
 if __name__ == '__main__':
     main()
