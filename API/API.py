@@ -5,6 +5,10 @@ class API:
         self.config = config
     def add_post(self, post: Post):
         # POST HTTP request to backend to add the post
+        # Returns true as in post has been added
+        return True
+    def get_posts(self, start_date: datetime.datetime, end_data: datetime.datetime):
+        # GET HTTP request to backend to posts within a time period
         # Returns a list of Posts
         return [
             Post(
